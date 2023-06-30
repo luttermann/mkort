@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Using OpenLayers with Vite</title>
+</head>
+<body>
+<div id="mkort" style="width: 300px; height: 300px" mkort-matr="2000174:1695i"></div>
+<script>
+    let mk = document.getElementById('mkort');
+    const data = [
+        "10051:1bv;10051:1f",
+        "2000174:1031;2000174:1032",
+        "2000179:345;2000179:394",
+        "11655:130a",
+        "11658:12ia;11658:12hæ;11658:12hy;11658:12hv",
+    ];
+    mk.setAttribute("mkort-matr", data[Math.floor(Math.random() * data.length)]);
+</script>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
